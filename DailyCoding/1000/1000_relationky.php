@@ -1,4 +1,8 @@
 <?php
-$a = 1;
-$b = 2;
+// Request Input
+fscanf(STDIN, "%d %d", $a, $b);
+
 $result = $a + $b;
+
+// Response Output
+fprintf(STDOUT, "%d", $result);
