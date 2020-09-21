@@ -1,3 +1,4 @@
+# 틀렸지반 반례 20개가 맞음 ㅜ
 import sys
 
 N, M = map(int, sys.stdin.readline().split())
