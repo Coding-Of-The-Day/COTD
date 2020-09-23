@@ -22,6 +22,7 @@ int main()
 	char chFindOdd = '\0';
 	int iCycleCount = 0;
 
+	// 앞부분 추가
 	for (auto& iter : mapAlphabets)
 	{
 		if (1 == (iter.second % 2))
@@ -47,9 +48,11 @@ int main()
 		}
 	}
 
+	// 중간 알파벳 추가
 	if('\0' != chFindOdd)
 	strPalindrome += chFindOdd;
 
+	// 남은 알파벳 추가
 	for (auto iter = mapAlphabets.rbegin(); iter != mapAlphabets.rend(); ++iter)
 	{
 		for (int j = iter->second - 1; j >= 0; --j)
